@@ -3,15 +3,25 @@
 `Version 0.1, 2023-02-16`
 
 This document tries to summaries a discussion with:
+
 Michael Schroeder <mls@suse.com>
+
 Ludwig Nussel <lnussel@suse.com>
+
 Alexander Herzig <aherzig@suse.com>
+
 Jiri Srain <jsrain@suse.com>
+
 Frederic Crozat <fcrozat@suse.com>
+
 Dominique Leuenberger <dleuenberger@suse.com>
+
 Fabian Vogt <fvogt@suse.de>
+
 Thorsten Kukuk <kukuk@suse.com>
+
 Stefan Schubert <schubi@suse.com>
+
 
 ## The Problem
 
@@ -80,8 +90,10 @@ the container project can't enable it again as it's not possible to undefine mac
 Perhaps a solution for this issue could be to restrict the usage of bcond in our OBS.
 Have a look to :
 https://github.com/rpm-software-management/rpm/blob/34c2ba3c6a80a778cdf2e42a9193b3264e08e1b3/macros.in#L100-L141
+
 The author suggests never use without_foo, _with_foo, _without_foo but only with_foo.
 And perhaps we could check these restrictions via rpmlint ?
+
 We need some RPM/OBS experts here ;-)
 
 ## How To Go On ?
